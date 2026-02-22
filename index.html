@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Intelligence | Md. Aminul Islam</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ClimateIntel.BD</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#forecast">Forecast</a></li>
+            <li><a href="#academic">Academic</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Climate Intelligence Framework</h1>
+        <p>A Big Data and Machine Learning Approach for Weather Forecasting in Bangladesh</p>
+        <a href="#dashboard" class="btn">View Analytics</a>
+    </section>
+
+    <div class="container">
+        
+        <div class="grid">
+            <div class="glass-card">
+                <h2>Total Records</h2>
+                <p id="total-records" style="font-family: 'Roboto Mono'; font-size: 2rem; color: #38bdf8;">Loading...</p>
+                <p>Climate data points (2021-2024)</p>
+            </div>
+            <div class="glass-card">
+                <h2>Model Accuracy</h2>
+                <p id="r2-score" style="font-family: 'Roboto Mono'; font-size: 2rem; color: #38bdf8;">Loading...</p>
+                <p>R-squared Score ($R^2$)</p>
+            </div>
+        </div>
+
+        <section id="methodology" style="margin-top: 4rem;">
+            <div class="glass-card">
+                <h2>Research Methodology</h2>
+                <p>This project integrates a multi-tool pipeline: <strong>Excel</strong> for ETL, <strong>R</strong> for statistical validation, and <strong>Python</strong> for Prophet-based machine learning forecasting.</p>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <p style="color: var(--text-dim); border: 1px dashed var(--glass-border); padding: 2rem;">[Insert methodology_flowchart.png here]</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" style="margin-top: 4rem;">
+            <div class="grid">
+                <div class="glass-card">
+                    <h2>Historical Temperature Trend</h2>
+                    <canvas id="tempChart"></canvas>
+                </div>
+                <div class="glass-card">
+                    <h2>Precipitation Count</h2>
+                    <canvas id="prcpChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="forecast" style="margin-top: 4rem;">
+            <div class="glass-card">
+                <h2>Future Forecast (2026 - 2030)</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Predicted Avg Temp (°F)</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="forecast-table-body">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="academic" style="margin-top: 4rem;">
+            <div class="glass-card">
+                <h2>Academic Integrity & Declarations</h2>
+                <p>I hereby declare that this project is a record of my own work. Generative AI tools (Gemini, ChatGPT) were used for grammar checking, code optimization, and structure drafting under academic guidance.</p>
+                <p style="margin-top: 1rem;"><strong>Supervisor:</strong> Prof. Dr. Karim Mohammed Rezaul</p>
+                <p><strong>Institution:</strong> Brit College of Engineering & Technology (BCET)</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Md. Aminul Islam Rubel | ID: APC-B1-006 | Climate Intelligence Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

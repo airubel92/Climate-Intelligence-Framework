@@ -1,0 +1,28 @@
+{
+  "project_info": {
+    "title": "Climate Intelligence Framework",
+    "location": "Bangladesh",
+    "unit": "Temperature in °F, Precipitation in Count"
+  },
+  "historical_data": {
+    "years": [2021, 2022, 2023, 2024],
+    "avg_temp": [77.52, 78.53, 79.36, 79.33],
+    "prcp_count": [253, 1070, 3119, 3032]
+  },
+  "forecast_data": {
+    "years": [2026, 2027, 2028, 2029, 2030],
+    "predicted_temp": [79.85, 80.12, 80.45, 80.78, 81.10]
+  },
+  "model_performance": {
+    "metrics": ["Mean Squared Error (MSE)", "R-squared (R²)"],
+    "values": [12.4582, 0.8420]
+  },
+  "shap_analysis": {
+    "features": ["Elevation", "Latitude", "Longitude", "Month", "Humidity"],
+    "importance_scores": [0.45, 0.32, 0.12, 0.08, 0.03]
+  },
+  "station_summary": {
+    "total_records": 8706,
+    "analysis_period": "2021 - 2024"
+  }
+}
